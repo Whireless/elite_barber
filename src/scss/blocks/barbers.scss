@@ -1,0 +1,21 @@
+.barbers {
+  scroll-margin-top: 3em;
+  background-color: $grey;
+}
+
+.barbers__title {
+  margin: 20px 0 40px 0;
+}
+
+.barbers__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.barbers__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}

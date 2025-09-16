@@ -1,0 +1,38 @@
+.services {
+  scroll-margin-top: 3em;
+  color: $blue;
+  background: $darkblue url("../img/price-bg.png");
+  background-size: cover;
+}
+
+.services__suptitle {
+  &::before {
+    background-color: $blue;
+  }
+}
+
+.services__title {
+  color: $white;
+  width: max-content;
+  margin: 20px auto 40px auto;
+}
+
+.services__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  // background: $darkblue;
+  backdrop-filter: blur(9px);
+  // backdrop-filter: opacity(10%);
+  padding: 20px 25px;
+}
+
+.services__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__booking-link {
+  margin: 25px auto 0 auto;
+  color: $white;
+}

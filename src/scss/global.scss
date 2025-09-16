@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+  min-width: 375px;
+  background-color: $white;
+}
+
+.suptitle {
+  font-size: 11px;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 40px;
+    height: 1px;
+    background-color: $black;
+  }
+}
+
+.online-booking {
+  text-transform: uppercase;
+  color: $black;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  width: max-content;
+  padding: 8px 20px;
+  border: 1px solid $orange;
+  border-radius: 30px;
+  transition: 0.4s;
+
+  &:hover {
+    color: $white;
+    background-color: $orange;
+  }
+}

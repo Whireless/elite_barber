@@ -1,0 +1,63 @@
+.contacts {
+  scroll-margin-top: 3em;
+  color: $blue;
+  background: $darkblue url("../img/contacts-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contacts__title {
+  color: $white;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin: 40px 0;
+}
+
+.contacts__item {
+  position: relative;
+  padding-left: 35px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+  }
+
+  &--phone {
+    &::before {
+      background-image: url("../img/icons/phone.svg");
+    }
+  }
+
+  &--adress {
+    &::before {
+      background-image: url("../img/icons/map-pin.svg");
+    }
+  }
+
+  a {
+    color: $blue;
+    text-decoration: none;
+    transition: 0.4s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.contacts__work-time {
+  &::before {
+    background-color: $blue;
+  }
+}
