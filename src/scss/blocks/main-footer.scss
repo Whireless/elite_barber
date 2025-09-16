@@ -1,0 +1,33 @@
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 15px;
+}
+
+.main-footer__copyright {
+  color: $blue;
+}
+
+.main-footer__list {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -70px;
+    width: 60px;
+    height: 1px;
+    background-color: $black;
+  }
+}
+
+.main-footer__link {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.4s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

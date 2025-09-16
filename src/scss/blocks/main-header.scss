@@ -1,0 +1,23 @@
+.main-header {
+  color: $blue;
+  background-image: url("../img/header-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 170px 15px 140px 15px;
+}
+
+.main-header__suptitle {
+  &::before {
+    background-color: $blue;
+  }
+}
+
+.main-header__title {
+  color: $white;
+  margin: 20px 0;
+}
+
+.main-header__description {
+  width: 285px;
+  text-align: justify;
+}
