@@ -4,7 +4,7 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import simpleHtmlPlugin from 'vite-plugin-simple-html';
 
 export default defineConfig({
-  base: '/elite_barber', // На Github
+  // base: '/elite_barber', // На Github
   // base: '/', // На хостинг
   server: {
     open: true,
