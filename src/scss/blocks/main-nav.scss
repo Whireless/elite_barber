@@ -5,7 +5,16 @@
   right: 15px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   z-index: 8;
+}
+
+.main-nav__logo {
+  color: $gold;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
 }
 
 .main-nav__block {
@@ -44,7 +53,8 @@
   transition: 0.4s;
 
   &:hover {
-    color: $orange;
+    // color: $orange;
+    color: $gold;
   }
 }
 
@@ -54,13 +64,14 @@
   row-gap: 7px;
   width: 40px;
   height: max-content;
+  background-color: transparent;
   border: none;
   cursor: pointer;
   padding: 5px;
 
   &--open {
-    background-color: $darkblue;
-    backdrop-filter: blur(10px);
+    // background-color: $darkblue;
+    // backdrop-filter: blur(10px);
   }
 
   &--close {
@@ -78,7 +89,7 @@
   display: block;
   width: 100%;
   height: 3px;
-  background-color: $white;
+  background-color: $gold;
 }
 
 .main-nav__info {
@@ -97,6 +108,6 @@
   transition: 0.4s;
 
   &:hover {
-    color: $orange;
+    color: $gold;
   }
 }

@@ -39,12 +39,14 @@ body {
   display: block;
   width: max-content;
   padding: 8px 20px;
-  border: 1px solid $orange;
+  // border: 1px solid $orange;
+  border: 1px solid $gold;
   border-radius: 30px;
   transition: 0.4s;
 
   &:hover {
     color: $white;
-    background-color: $orange;
+    // background-color: $orange;
+    background-color: $gold;
   }
 }
