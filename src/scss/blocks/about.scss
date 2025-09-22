@@ -2,6 +2,25 @@
   scroll-margin-top: 3em;
 }
 
+.about__block {
+  display: flex;
+  column-gap: 30px;
+}
+
+.about__images {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+
+.about__img {
+  object-fit: cover;
+}
+
 .about__title {
   margin: 20px 0;
 }
@@ -12,4 +31,8 @@
 
 .about__booking-link {
   margin-top: 20px;
+
+  @media (min-width: $tablet) {
+    margin-top: 44px;
+  }
 }

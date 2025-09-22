@@ -4,13 +4,17 @@
 }
 
 .barbers__title {
-  margin: 20px 0 40px 0;
+  margin: 20px 0 44px 0;
 }
 
 .barbers__list {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
+
+  @media (min-width: $tablet) {
+    row-gap: 64px;
+  }
 }
 
 .barbers__item {
@@ -20,7 +24,13 @@
   row-gap: 10px;
 }
 
+.barbers__barber-photo {
+  @media (min-width: $tablet) {
+    width: 400px;
+    height: 500px;
+  }
+}
+
 .barbers__barber-position {
-  // color: $orange;
   color: $gold;
 }

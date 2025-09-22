@@ -11,14 +11,15 @@
 <body>
   <header class="main-header" id="intro">
     <nav class="main-nav">
-      <a class="main-nav__logo" href="#intro" aria-label="Наш логотип">ELITE</a>
+      <!-- <a class="main-nav__logo" href="#intro" aria-label="Наш логотип">ELITE</a> -->
+      <a class="main-nav__link main-nav__link--logo" href="#intro" aria-label="Наш логотип">ELITE</a>
       <div class="main-nav__block">
         <button class="main-nav__button main-nav__button--close"></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#about" class="main-nav__link">О нас</a></li>
-          <li class="main-nav__item"><a href="#services" class="main-nav__link">Услуги</a></li>
-          <li class="main-nav__item"><a href="#barbers" class="main-nav__link">Мастера</a></li>
-          <li class="main-nav__item"><a href="#contacts" class="main-nav__link">Контакты</a></li>
+          <li class="main-nav__item"><a href="#about" class="main-nav__link main-nav__link--menu">О нас</a></li>
+          <li class="main-nav__item"><a href="#services" class="main-nav__link main-nav__link--menu">Услуги</a></li>
+          <li class="main-nav__item"><a href="#barbers" class="main-nav__link main-nav__link--menu">Мастера</a></li>
+          <li class="main-nav__item"><a href="#contacts" class="main-nav__link main-nav__link--menu">Контакты</a></li>
         </ul>
         <div class="main-nav__info">
           <a class="main-nav__phone" href="tel:+7 (918) 666-41-72">+7 (918) 666-41-72</a>
@@ -31,24 +32,34 @@
         <span class="main-nav__button-elem"></span>
       </button>
     </nav>
-    <span class="main-header__suptitle suptitle">Мужская парикмахерская в Ейске</span>
-    <h1 class="main-header__title">Elite BarberShop</h1>
-    <p class="main-header__description">
-      Мы — эксперты в области модных мужских стрижек.
-      Работаем быстро, аккуратно и стильно.
-    </p>
+    <article class="main-header__info">
+      <span class="main-header__suptitle suptitle">Мужская парикмахерская в Ейске</span>
+      <h1 class="main-header__title">Elite BarberShop</h1>
+      <p class="main-header__description">
+        Мы — эксперты в области модных мужских стрижек.
+        Работаем быстро, аккуратно и стильно.
+      </p>
+    </article>
   </header>
   <main>
     <section class="about" id="about">
       <div class="container">
-        <span class="about__suptitle suptitle">О нас</span>
-        <h2 class="about__title">Лучший барбершоп в Ейске</h2>
-        <p class="about__description">
-          Если вы хотите придать больше уверенности своему имиджу, вам следует посетить нас.
-          <br><br>
-          Мы — команда, которая никогда не останавливается на достигнутом и жаждет перемен. И, попав в руки нашего мастера, вы уже никогда не будете прежними. Мы — команда, которая всегда «на одной волне» с клиентами. Поэтому мы всегда готовы совершенствовать каждого, кто к нам обращается!
-        </p>
-        <a class="about__booking-link online-booking" href="https://dikidi.net/1116446">Онлайн-запись</a>
+        <div class="about__block">
+          <article class="about__images">
+            <img class="about__img" src="img/about/1.webp" width="330" height="235" alt="">
+            <img class="about__img" src="img/about/2.jpeg" width="330" height="235" alt="">
+          </article>
+          <article class="about__info">
+            <span class="about__suptitle suptitle">О нас</span>
+            <h2 class="about__title">Лучший барбершоп в Ейске</h2>
+            <p class="about__description">
+              Если вы хотите придать больше уверенности своему имиджу, вам следует посетить нас.
+              <br><br>
+              Мы — команда, которая никогда не останавливается на достигнутом и жаждет перемен. И, попав в руки нашего мастера, вы уже никогда не будете прежними. Мы — команда, которая всегда «на одной волне» с клиентами. Поэтому мы всегда готовы совершенствовать каждого, кто к нам обращается!
+            </p>
+            <a class="about__booking-link online-booking" href="https://dikidi.net/1116446">Онлайн-запись</a>
+          </article>
+        </div>
       </div>
     </section>
     <section class="services" id="services">
@@ -88,17 +99,17 @@
         <h2 class="barbers__title">Наши барберы</h2>
         <ul class="barbers__list">
           <li class="barbers__item">
-            <img class="barbers__barber-photo" src="img/barbers/Daniil.jpeg" alt="" width="345" height="440">
+            <img class="barbers__barber-photo" src="img/barbers/Daniil.jpeg" width="345" height="440" alt="">
             <h3 class="barbers__barber-name">Даниил</h3>
             <p class="barbers__barber-position">Хозяин. Профессиональный Барбер</p>
           </li>
           <li class="barbers__item">
-            <img class="barbers__barber-photo" src="img/barbers/Olga.jpeg" alt="" width="345" height="440">
+            <img class="barbers__barber-photo" src="img/barbers/Olga.jpeg" width="345" height="440" alt="">
             <h3 class="barbers__barber-name">Ольга</h3>
             <p class="barbers__barber-position">Профессиональный Барбер</p>
           </li>
           <li class="barbers__item">
-            <img class="barbers__barber-photo" src="img/barbers/Pavel.jpeg" alt="" width="345" height="440">
+            <img class="barbers__barber-photo" src="img/barbers/Pavel.jpeg" width="345" height="440" alt="">
             <h3 class="barbers__barber-name">Павел</h3>
             <p class="barbers__barber-position">Профессиональный Барбер</p>
           </li>
@@ -114,11 +125,10 @@
       <div class="container">
         <span class="gallery__title suptitle">На латыни «barba» означает «борода».</span>
         <ul class="gallery__list">
-          <li class="gallery__item"><img class="gallery__img" src="img/gallery/1.webp" alt="" width="345" height="440"></li>
-          <li class="gallery__item"><img class="gallery__img" src="img/gallery/2.webp" alt="" width="345" height="440"></li>
-          <li class="gallery__item"><img class="gallery__img" src="img/gallery/3.webp" alt="" width="345" height="440"></li>
-          <li class="gallery__item"><img class="gallery__img" src="img/gallery/4.webp" alt="" width="345" height="440"></li>
-          <li class="gallery__item"><img class="gallery__img" src="img/gallery/5.webp" alt="" width="345" height="440"></li>
+          <li class="gallery__item"><img class="gallery__img" src="img/gallery/1.webp" width="345" height="440" alt=""></li>
+          <li class="gallery__item"><img class="gallery__img" src="img/gallery/2.webp" width="345" height="440" alt=""></li>
+          <li class="gallery__item"><img class="gallery__img" src="img/gallery/3.webp" width="345" height="440" alt=""></li>
+          <li class="gallery__item"><img class="gallery__img" src="img/gallery/4.webp" width="345" height="440" alt=""></li>
         </ul>
       </div>
     </section>
@@ -126,13 +136,17 @@
   <section class="contacts" id="contacts">
     <div class="container">
       <h2 class="contacts__title">Контакты</h2>
-      <ul class="contacts__list">
-        <li class="contacts__item contacts__item--adress">г. Ейск, ул. Коммунаров, д. 26</li>
-        <li class="contacts__item contacts__item--phone"><a href="tel:+7 (918) 666-41-72">+7 (918) 666-41-72</a></li>
-        <!-- <li class="contacts__item"></li> -->
-      </ul>
-      <span class="contacts__work-time suptitle">Время работы</span>
-      <p class="contacts__description">каждый день с 10:00 до 20:05</p>
+      <div class="contacts__info">
+        <ul class="contacts__list">
+          <li class="contacts__item contacts__item--adress">г. Ейск, ул. Коммунаров, д. 26</li>
+          <li class="contacts__item contacts__item--phone"><a href="tel:+7 (918) 666-41-72">+7 (918) 666-41-72</a></li>
+          <!-- <li class="contacts__item"></li> -->
+        </ul>
+        <div class="contacts__times">
+          <span class="contacts__work-time suptitle">Время работы</span>
+          <p class="contacts__description">каждый день с 10:00 до 20:05</p>
+        </div>
+      </div>
     </div>
   </section>
   <footer class="main-footer">

@@ -14,17 +14,25 @@
 .services__title {
   color: $white;
   width: max-content;
-  margin: 20px auto 40px auto;
+  margin: 20px auto 44px auto;
+
+  @media (min-width: $tablet) {
+    margin: 20px 0 44px 0;
+  }
 }
 
 .services__list {
   display: flex;
   flex-direction: column;
   row-gap: 25px;
-  // background: $darkblue;
-  backdrop-filter: blur(9px);
-  // backdrop-filter: opacity(10%);
+  backdrop-filter: blur(10px);
   padding: 20px 25px;
+  border: 1px solid $darkblue;
+
+  @media (min-width: $tablet) {
+    backdrop-filter: blur(20px);
+    padding: 32px 40px;
+  }
 }
 
 .services__item {
@@ -35,4 +43,8 @@
 .services__booking-link {
   margin: 25px auto 0 auto;
   color: $white;
+
+  @media (min-width: $tablet) {
+    margin: 40px auto 0 auto;
+  }
 }

@@ -4,6 +4,23 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 161px 15px 150px 15px;
+
+  @media (min-width: $tablet) {
+    padding: 300px 30px 300px 30px;
+  }
+}
+
+.main-header__info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 20px;
+
+  @media (min-width: $tablet) {
+    row-gap: 25px;
+    width: max-content;
+    margin: 0 auto;
+  }
 }
 
 .main-header__suptitle {
@@ -13,11 +30,21 @@
 }
 
 .main-header__title {
+  font-size: 35px;
+  line-height: 40px;
   color: $white;
-  margin: 20px 0;
+
+  @media (min-width: $tablet) {
+    font-size: 50px;
+    line-height: 55px;
+  }
 }
 
 .main-header__description {
   width: 285px;
   text-align: justify;
+
+  @media (min-width: $tablet) {
+    width: 373px;
+  }
 }

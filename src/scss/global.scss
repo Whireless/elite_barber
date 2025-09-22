@@ -8,10 +8,22 @@
 body {
   font-family: 'Raleway', 'Arial', sans-serif;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 21px;
   color: $black;
   min-width: 375px;
   background-color: $white;
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+    line-height: 22px;
+  }
+}
+
+h2 {
+  @media (min-width: $tablet) {
+    font-size: 35px;
+    line-height: 40px;
+  }
 }
 
 .suptitle {
@@ -29,6 +41,15 @@ body {
     height: 1px;
     background-color: $black;
   }
+
+  @media (min-width: $tablet) {
+    padding-left: 75px;
+
+    &::before {
+      // top: 10px;
+      width: 60px;
+    }
+  }
 }
 
 .online-booking {
@@ -38,7 +59,7 @@ body {
   text-decoration: none;
   display: block;
   width: max-content;
-  padding: 8px 20px;
+  padding: 12px 20px;
   // border: 1px solid $orange;
   border: 1px solid $gold;
   border-radius: 30px;
@@ -49,4 +70,8 @@ body {
     // background-color: $orange;
     background-color: $gold;
   }
+
+  // @media (min-width: $tablet) {
+  //   padding: 12px 20px;
+  // }
 }

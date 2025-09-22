@@ -4,12 +4,29 @@
   background: $darkblue url("../img/contacts-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet) {
+    background-position: 0;
+  }
 }
 
 .contacts__title {
   color: $white;
   margin: 0 auto;
   width: max-content;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
+}
+
+.contacts__info {
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    column-gap: 120px;
+  }
 }
 
 .contacts__list {
@@ -17,6 +34,10 @@
   flex-direction: column;
   row-gap: 20px;
   margin: 40px 0;
+
+  @media (min-width: $tablet) {
+    margin: 40px 0 0 0;
+  }
 }
 
 .contacts__item {
@@ -40,6 +61,7 @@
   }
 
   &--adress {
+    font-weight: 700;
     &::before {
       background-image: url("../img/icons/map-pin.svg");
     }
@@ -54,6 +76,12 @@
       opacity: 0.5;
     }
   }
+}
+
+.contacts__times {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
 .contacts__work-time {
