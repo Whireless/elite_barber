@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   row-gap: 30px;
-  // width: max-content;
   margin: 44px auto 0 auto;
 
   @media (min-width: $tablet) {
@@ -12,6 +11,14 @@
     gap: 30px;
     width: 708px;
   }
+
+  @media (min-width: $laptop) {
+    width: max-content;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 50px;
+  }
 }
 
 .gallery__img {
@@ -19,5 +26,15 @@
     object-fit: cover;
     width: 339px;
     height: 365px;
+  }
+
+  @media (min-width: $laptop) {
+    width: 267px;
+    height: 360px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 415px;
+    height: 610px;
   }
 }

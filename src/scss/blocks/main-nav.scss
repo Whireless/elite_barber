@@ -1,11 +1,12 @@
 .main-nav {
   position: fixed;
-  top: 20px;
-  left: 15px;
-  right: 15px;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 15px;
   z-index: 8;
   transition: 0.4s;
 
@@ -14,22 +15,27 @@
   }
 
   @media (min-width: $tablet) {
-    top: 25px;
-    left: 30px;
-    right: 30px;
-    padding: 15px 10px;
+    padding: 25px 30px;
+  }
+
+  @media (min-width: $laptop) {
+    padding: 25px 60px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 30px 120px;
   }
 }
 
 .main-nav__block {
   position: absolute;
-  top: -25px;
-  right: -15px;
+  top: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   width: 250px;
   height: 100vh;
-  padding: 30px 25px;
+  padding: 20px 25px;
   background-color: $white;
   z-index: 9;
   overflow: hidden;
@@ -42,13 +48,21 @@
 
   @media (min-width: $tablet) {
     flex-direction: row;
-    column-gap: 45px;
+    column-gap: 35px;
     position: static;
     height: auto;
     background-color: transparent;
     width: auto;
     padding: 0;
     transform: translateX(0);
+  }
+
+  @media (min-width: $laptop) {
+    column-gap: 75px;
+  }
+
+  @media (min-width: $desktop) {
+    column-gap: 150px;
   }
 }
 
@@ -60,28 +74,37 @@
 
   @media (min-width: $tablet) {
     flex-direction: row;
-    // align-items: center;
-    column-gap: 21px;
+    column-gap: 20px;
     margin-top: 0;
+  }
+
+  @media (min-width: $laptop) {
+    align-items: center;
+    column-gap: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    column-gap: 50px;
   }
 }
 
 .main-nav__link {
   text-decoration: none;
   letter-spacing: 2px;
+  font-weight: 700;
+  color: $black;
   transition: 0.4s;
 
   &--logo {
-    color: $gold;
+    color: $white;
     font-size: 26px;
-    font-weight: 700;
   }
 
   &--menu {
     font-size: 20px;
-    color: $black;
-    font-weight: 600;
+  }
 
+  &:not(&--logo) {
     &:hover {
       color: $gold;
     }
@@ -92,15 +115,32 @@
 
     &--logo {
       font-size: 28px;
-      align-self: start;
 
       &:hover {
         color: $gold;
       }
     }
 
-    &--menu {
+    &:not(&--logo) {
       font-size: 16px;
+    }
+  }
+
+  @media (min-width: $laptop) {
+    &--logo {
+      font-size: 40px;
+      line-height: 30px;
+    }
+
+    &:not(&--logo) {
+      font-size: inherit;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &--logo {
+      font-size: 50px;
+      line-height: 38px;
     }
   }
 }
@@ -114,7 +154,6 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  // padding: 5px;
 
   &--open {
     // background-color: $darkblue;
@@ -122,8 +161,8 @@
   }
 
   &--close {
-    width: 26px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
     background-color: transparent;
     background-image: url("../img/icons/close.svg");
     background-repeat: no-repeat;
@@ -140,7 +179,7 @@
   display: block;
   width: 100%;
   height: 3px;
-  background-color: $gold;
+  background-color: $white;
 }
 
 .main-nav__info {
@@ -153,28 +192,24 @@
     align-items: center;
     margin-top: 0;
   }
-}
 
-.main-nav__phone {
-  font-size: 19px;
-  color: $black;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-decoration: none;
-  transition: 0.4s;
-
-  &:hover {
-    color: $gold;
+  @media (min-width: $laptop) {
+    flex-direction: row;
+    column-gap: 30px;
   }
 
-  @media (min-width: $tablet) {
-    font-size: 16px;
-    color: $white;
+  @media (min-width: $desktop) {
+    column-gap: 50px;
   }
 }
 
 .main-nav__booking-link {
   @media (min-width: $tablet) {
     display: none;
+  }
+
+  @media (min-width: $laptop) {
+    color: $white;
+    display: block;
   }
 }

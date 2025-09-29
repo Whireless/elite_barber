@@ -5,6 +5,10 @@
 
 .barbers__title {
   margin: 20px 0 44px 0;
+
+  @media (min-width: $desktop) {
+    margin: 30px 0 60px 0;
+  }
 }
 
 .barbers__list {
@@ -15,13 +19,22 @@
   @media (min-width: $tablet) {
     row-gap: 64px;
   }
+
+  @media (min-width: $laptop) {
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    column-gap: 50px;
+  }
 }
 
 .barbers__item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 10px;
 }
 
 .barbers__barber-photo {
@@ -29,6 +42,21 @@
     width: 400px;
     height: 500px;
   }
+
+  @media (min-width: $laptop) {
+    object-fit: cover;
+    width: 367px;
+    height: 346px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 550px;
+    height: 650px;
+  }
+}
+
+.barbers__barber-name {
+  margin: 30px 0 8px 0;
 }
 
 .barbers__barber-position {

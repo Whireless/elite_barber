@@ -5,4 +5,12 @@
   @media (min-width: $tablet) {
     padding: 80px 30px;
   }
+
+  @media (min-width: $laptop) {
+    padding: 110px 60px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 150px 120px;
+  }
 }

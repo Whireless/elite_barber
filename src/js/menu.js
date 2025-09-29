@@ -24,21 +24,20 @@ closeMenu.addEventListener('click', () => {
   menuBlock.classList.remove('main-nav__block--open');
 });
 
-if (window.matchMedia("(min-width: 768px)").matches) {
+if (window.matchMedia("(min-width: 375px) and (max-width: 767px)").matches) {
   window.addEventListener('scroll', () => {
-    if (window.scrollY >= 650) {
+    if (window.scrollY >= 400) {
+      mainNav.classList.add('main-nav--scroll');
+    } else {
+      mainNav.classList.remove('main-nav--scroll');
+    }
+  });
+} else if (window.matchMedia("(min-width: 768px)").matches) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY >= 700) {
       mainNav.classList.add('main-nav--scroll');
     } else {
       mainNav.classList.remove('main-nav--scroll');
     }
   });
 }
-
-
-// window.addEventListener('scroll', () => {
-//   if (window.scrollY >= 650) {
-//     mainNav.classList.add('main-nav--scroll');
-//   } else {
-//     mainNav.classList.remove('main-nav--scroll');
-//   }
-// });

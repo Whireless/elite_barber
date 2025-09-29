@@ -1,11 +1,18 @@
 .contacts {
   scroll-margin-top: 3em;
   color: $blue;
-  background: $darkblue url("../img/contacts-bg.png");
+  background: $darkblue url("../img/bg/mobile/contacts.png");
   background-size: cover;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet) {
+    background-position: 0;
+  }
+
+  @media (min-width: $laptop) {
+    background: $darkblue url("../img/bg/laptop/contacts.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: 0;
   }
 }
@@ -24,8 +31,15 @@
   @media (min-width: $tablet) {
     display: flex;
     align-items: center;
-    // justify-content: space-between;
     column-gap: 120px;
+  }
+
+  @media (min-width: $laptop) {
+    margin-top: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 60px;
   }
 }
 
@@ -37,6 +51,14 @@
 
   @media (min-width: $tablet) {
     margin: 40px 0 0 0;
+  }
+
+  @media (min-width: $laptop) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    row-gap: 35px;
   }
 }
 
@@ -52,6 +74,7 @@
     width: 25px;
     height: 25px;
     background-repeat: no-repeat;
+    background-size: contain;
   }
 
   &--phone {
@@ -76,16 +99,42 @@
       opacity: 0.5;
     }
   }
+
+  @media (min-width: $desktop) {
+    padding-left: 50px;
+
+    &::before {
+      top: -4px;
+      width: 40px;
+      height: 40px;
+    }
+  }
 }
 
 .contacts__times {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+
+  @media (min-width: $desktop) {
+    row-gap: 35px;
+  }
 }
 
 .contacts__work-time {
   &::before {
     background-color: $blue;
+  }
+
+  @media (min-width: $laptop) {
+    &::before {
+      top: 12px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::before {
+      top: 13px;
+    }
   }
 }

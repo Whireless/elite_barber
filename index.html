@@ -3,30 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Elite - топовый барбершоп в Ейске. Качественно бреем, стрижём и не только. Звони и записывайся!">
+  <meta name="keywords" content="Барбершоп Ейск, Elite, Элит Барбершоп, Элит, Барбершоп, стрижка, подстрич бороду, детская стрижка, тонирование бороды, Оформление бороды и усов, борода, сделать стрижку в Ейске, парикмахер">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Барбершоп Elite</title>
 </head>
 <body>
   <header class="main-header" id="intro">
     <nav class="main-nav">
-      <!-- <a class="main-nav__logo" href="#intro" aria-label="Наш логотип">ELITE</a> -->
       <a class="main-nav__link main-nav__link--logo" href="#intro" aria-label="Наш логотип">ELITE</a>
       <div class="main-nav__block">
-        <button class="main-nav__button main-nav__button--close"></button>
-        <ul class="main-nav__list">
+        <button class="main-nav__button main-nav__button--close" aria-label="Закрыть мобильное меню"></button>
+        <ul class="main-nav__list" aria-label="Навигация сайта">
           <li class="main-nav__item"><a href="#about" class="main-nav__link main-nav__link--menu">О нас</a></li>
           <li class="main-nav__item"><a href="#services" class="main-nav__link main-nav__link--menu">Услуги</a></li>
           <li class="main-nav__item"><a href="#barbers" class="main-nav__link main-nav__link--menu">Мастера</a></li>
           <li class="main-nav__item"><a href="#contacts" class="main-nav__link main-nav__link--menu">Контакты</a></li>
         </ul>
         <div class="main-nav__info">
-          <a class="main-nav__phone" href="tel:+7 (918) 666-41-72">+7 (918) 666-41-72</a>
+          <a class="main-nav__link main-nav__link--phone" href="tel:+7 (918) 666-41-72">+7 (918) 666-41-72</a>
           <a class="main-nav__booking-link online-booking" href="https://dikidi.net/1116446">Онлайн-запись</a>
         </div>
       </div>
-      <button class="main-nav__button main-nav__button--open">
+      <button class="main-nav__button main-nav__button--open" aria-label="Открыть мобильное меню">
         <span class="main-nav__button-elem"></span>
         <span class="main-nav__button-elem"></span>
         <span class="main-nav__button-elem"></span>
@@ -66,31 +66,50 @@
       <div class="container">
         <span class="services__suptitle suptitle">Проведите время с лучшими мастерами</span>
         <h2 class="services__title">Услуги и цены</h2>
-        <ul class="services__list">
-          <li class="services__item">Стрижка головы: <span>1000р</span></li>
-          <li class="services__item">Комплекс (голова + борода): <span>1600р</span></li>
-          <li class="services__item">Детская стрижка: <span>600р</span></li>
-          <li class="services__item">Оформление бороды и усов: <span>600р</span></li>
-          <li class="services__item">Опасное бритьё: <span>1000р</span></li>
-          <li class="services__item">Тонирование бороды: <span>600р</span></li>
-          <li class="services__item">Окантовка: <span>300р</span></li>
+        <ul class="services__list services__list--one">
+          <li class="services__item">Стрижка головы: <span>1.000 ₽</span></li>
+          <li class="services__item">Комплекс (голова + борода): <span>1.600 ₽</span></li>
+          <li class="services__item">Детская стрижка: <span>600 ₽</span></li>
+          <li class="services__item">Оформление бороды и усов: <span>600 ₽</span></li>
+          <li class="services__item">Опасное бритьё: <span>1.000 ₽</span></li>
+          <li class="services__item">Тонирование бороды: <span>600 ₽</span></li>
+          <li class="services__item">Окантовка: <span>300 ₽</span></li>
+          <li class="services__item">Горячий воск: <span>300 ₽</span></li>
         </ul>
+        <div class="services__list-block">
+          <ul class="services__list services__list--two">
+          <li class="services__item">Стрижка головы: <span>1.000 ₽</span></li>
+          <li class="services__item">Комплекс (голова + борода): <span>1.600 ₽</span></li>
+          <li class="services__item">Детская стрижка: <span>600 ₽</span></li>
+          <li class="services__item">Оформление бороды и усов: <span>600 ₽</span></li>
+        </ul>
+        <ul class="services__list services__list--three">
+          <li class="services__item">Опасное бритьё: <span>1.000 ₽</span></li>
+          <li class="services__item">Тонирование бороды: <span>600 ₽</span></li>
+          <li class="services__item">Окантовка: <span>300 ₽</span></li>
+          <li class="services__item">Горячий воск: <span>300 ₽</span></li>
+        </ul>
+        </div>
         <a class="services__booking-link online-booking" href="https://dikidi.net/1116446">Онлайн-запись</a>
       </div>
     </section>
     <section class="advantages">
       <div class="container">
-        <span class="advantages__suptitle suptitle">Старая традиционная школа</span>
-        <h2 class="advantages__title">Почему люди выбирают нас?</h2>
-        <p class="advantages__description">
-          О нас говорят только хорошее. Но лучше один раз увидеть и почувствовать, чем десять раз прочитать.
-        </p>
-        <ul class="advantages__list">
-          <li class="advantages__item"><span>60</span> <br> Довольных клиентов в день</li>
-          <li class="advantages__item"><span>50</span> <br> Наград за отличное обслуживание</li>
-          <li class="advantages__item"><span>3</span> <br> Лучших парикмахеров Ейска</li>
-          <li class="advantages__item"><span>100</span> <br> Подарков постоянным клиентам</li>
-        </ul>
+        <div class="advantages__block">
+          <article class="advantages__info">
+            <span class="advantages__suptitle suptitle">Старая традиционная школа</span>
+            <h2 class="advantages__title">Почему люди выбирают нас?</h2>
+            <p class="advantages__description">
+              О нас говорят только хорошее. Но лучше один раз увидеть и почувствовать, чем десять раз прочитать.
+            </p>
+          </article>
+          <ul class="advantages__list">
+            <li class="advantages__item"><span>60</span> <br> Довольных клиентов в день</li>
+            <li class="advantages__item"><span>50</span> <br> Наград за отличное обслуживание</li>
+            <li class="advantages__item"><span>3</span> <br> Лучших парикмахеров Ейска</li>
+            <li class="advantages__item"><span>100</span> <br> Подарков постоянным клиентам</li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="barbers" id="barbers">
@@ -99,25 +118,20 @@
         <h2 class="barbers__title">Наши барберы</h2>
         <ul class="barbers__list">
           <li class="barbers__item">
-            <img class="barbers__barber-photo" src="img/barbers/Daniil.jpeg" width="345" height="440" alt="">
+            <img class="barbers__barber-photo" src="img/barbers/Daniil.jpeg" width="345" height="440" alt="Основатель студии, и просто хороший парень">
             <h3 class="barbers__barber-name">Даниил</h3>
             <p class="barbers__barber-position">Хозяин. Профессиональный Барбер</p>
           </li>
           <li class="barbers__item">
-            <img class="barbers__barber-photo" src="img/barbers/Olga.jpeg" width="345" height="440" alt="">
+            <img class="barbers__barber-photo" src="img/barbers/Olga.jpeg" width="345" height="440" alt="Тут у нас Оля на фото должна быть">
             <h3 class="barbers__barber-name">Ольга</h3>
             <p class="barbers__barber-position">Профессиональный Барбер</p>
           </li>
           <li class="barbers__item">
-            <img class="barbers__barber-photo" src="img/barbers/Pavel.jpeg" width="345" height="440" alt="">
+            <img class="barbers__barber-photo" src="img/barbers/Pavel.jpeg" width="345" height="440" alt="На фото Павел, тоже не плохо стрижёт">
             <h3 class="barbers__barber-name">Павел</h3>
             <p class="barbers__barber-position">Профессиональный Барбер</p>
           </li>
-          <!-- <li class="barbers__item">
-            <img class="barbers__barber-photo" src="" alt="" width="345" height="350">
-            <h3 class="barbers__barber-name">Георгий</h3>
-            <p class="barbers__barber-position">Профессиональный Барбер</p>
-          </li> -->
         </ul>
       </div>
     </section>
@@ -125,10 +139,10 @@
       <div class="container">
         <span class="gallery__title suptitle">На латыни «barba» означает «борода».</span>
         <ul class="gallery__list">
-          <li class="gallery__item"><img class="gallery__img" src="img/gallery/1.webp" width="345" height="440" alt=""></li>
-          <li class="gallery__item"><img class="gallery__img" src="img/gallery/2.webp" width="345" height="440" alt=""></li>
-          <li class="gallery__item"><img class="gallery__img" src="img/gallery/3.webp" width="345" height="440" alt=""></li>
-          <li class="gallery__item"><img class="gallery__img" src="img/gallery/4.webp" width="345" height="440" alt=""></li>
+          <li class="gallery__item"><img class="gallery__img" src="img/gallery/1.webp" width="345" height="440" alt="Тут мы бреем человека"></li>
+          <li class="gallery__item"><img class="gallery__img" src="img/gallery/2.webp" width="345" height="440" alt="Этому парню сейчас будем голову мыть"></li>
+          <li class="gallery__item"><img class="gallery__img" src="img/gallery/3.webp" width="345" height="440" alt="Мягкие пуфики и диван"></li>
+          <li class="gallery__item"><img class="gallery__img" src="img/gallery/4.webp" width="345" height="440" alt="Шикарные сиденья и освещение"></li>
         </ul>
       </div>
     </section>
@@ -140,7 +154,6 @@
         <ul class="contacts__list">
           <li class="contacts__item contacts__item--adress">г. Ейск, ул. Коммунаров, д. 26</li>
           <li class="contacts__item contacts__item--phone"><a href="tel:+7 (918) 666-41-72">+7 (918) 666-41-72</a></li>
-          <!-- <li class="contacts__item"></li> -->
         </ul>
         <div class="contacts__times">
           <span class="contacts__work-time suptitle">Время работы</span>
