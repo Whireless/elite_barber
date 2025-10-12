@@ -1,5 +1,6 @@
 .main-header {
-  color: $blue;
+  // color: $blue;
+  color: $gold;
   background-image: url("../img/bg/mobile/header.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -39,7 +40,9 @@
 
 .main-header__suptitle {
   &::before {
-    background-color: $blue;
+    top: 9px;
+    // background-color: $blue;
+    background-color: $gold;
   }
 
   @media (min-width: $laptop) {
@@ -53,6 +56,7 @@
   font-size: 35px;
   line-height: 40px;
   color: $white;
+  // color: $gold;
 
   @media (min-width: $tablet) {
     font-size: 50px;

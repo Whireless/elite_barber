@@ -1,6 +1,7 @@
 .contacts {
   scroll-margin-top: 3em;
-  color: $blue;
+  // color: $blue;
+  color: $gold;
   background: $darkblue url("../img/bg/mobile/contacts.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -91,7 +92,8 @@
   }
 
   a {
-    color: $blue;
+    // color: $blue;
+    color: $gold;
     text-decoration: none;
     transition: 0.4s;
 
@@ -123,7 +125,9 @@
 
 .contacts__work-time {
   &::before {
-    background-color: $blue;
+    top: 9px;
+    // background-color: $blue;
+    background-color: $gold;
   }
 
   @media (min-width: $laptop) {

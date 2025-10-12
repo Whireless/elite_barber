@@ -22,8 +22,9 @@
 }
 
 .gallery__img {
+  object-fit: cover;
+
   @media (min-width: $tablet) {
-    object-fit: cover;
     width: 339px;
     height: 365px;
   }

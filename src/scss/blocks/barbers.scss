@@ -38,15 +38,16 @@
 }
 
 .barbers__barber-photo {
+  object-fit: cover;
+
   @media (min-width: $tablet) {
     width: 400px;
     height: 500px;
   }
 
   @media (min-width: $laptop) {
-    object-fit: cover;
     width: 367px;
-    height: 346px;
+    height: 450px;
   }
 
   @media (min-width: $desktop) {
