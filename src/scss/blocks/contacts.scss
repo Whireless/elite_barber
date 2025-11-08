@@ -5,6 +5,7 @@
   background: $darkblue url("../img/bg/mobile/contacts.png");
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
 
   @media (min-width: $tablet) {
     background-position: 0;

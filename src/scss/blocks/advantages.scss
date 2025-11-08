@@ -1,4 +1,6 @@
 .advantages__block {
+  overflow: hidden;
+
   @media (min-width: $laptop) {
     display: flex;
     column-gap: 130px;
