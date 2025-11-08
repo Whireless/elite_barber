@@ -18,11 +18,11 @@ animate('.about__info', {
   opacity: [0, 1],
   x: ['100%', 0],
   autoplay: onScroll({
-    enter: 'center -190px',
+    enter: 'center -200px',
     leave: 'center center',
     alternate: true,
     sync: true,
-    // debug: true,
+    debug: true,
   }),
 });
 
@@ -210,8 +210,8 @@ animate('.contacts__title', {
   opacity: [0, 1],
   y: ['100%', 0],
   autoplay: onScroll({
-    enter: 'center -250px',
-    leave: 'center -160px',
+    enter: 'center -290px',
+    leave: 'center -200px',
     alternate: true,
     sync: true,
     // debug: true,
@@ -221,8 +221,8 @@ animate('.contacts__title', {
 animate('.contacts__info', {
   opacity: [0, 1],
   autoplay: onScroll({
-    enter: 'center -215px',
-    leave: 'center -110px',
+    enter: 'center -240px',
+    leave: 'center -140px',
     alternate: true,
     sync: true,
     // debug: true,

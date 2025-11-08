@@ -1,10 +1,14 @@
 .main-header {
   // color: $blue;
   color: $gold;
+  display: flex;
+  align-items: center;
+  height: 100vh;
   background-image: url("../img/bg/mobile/header.png");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 161px 15px 150px 15px;
+  // padding: 161px 15px 150px 15px;
+  padding: 0px 15px;
 
   @media (min-width: $tablet) {
     background-image: url("../img/bg/tablet/header.png");
@@ -25,7 +29,8 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  row-gap: 20px;
+  // row-gap: 20px;
+  row-gap: 22px;
 
   @media (min-width: $tablet) {
     row-gap: 25px;
@@ -53,8 +58,10 @@
 }
 
 .main-header__title {
-  font-size: 35px;
-  line-height: 40px;
+  // font-size: 35px;
+  // line-height: 40px;
+  font-size: 40px;
+  line-height: 45px;
   color: $white;
   // color: $gold;
 
@@ -75,7 +82,8 @@
 }
 
 .main-header__description {
-  width: 285px;
+  // width: 285px;
+  width: 325px;
   text-align: justify;
 
   @media (min-width: $tablet) {
