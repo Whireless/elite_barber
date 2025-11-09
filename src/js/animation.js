@@ -18,11 +18,11 @@ animate('.about__info', {
   opacity: [0, 1],
   x: ['100%', 0],
   autoplay: onScroll({
-    enter: 'center -200px',
+    enter: 'center -220px',
     leave: 'center center',
     alternate: true,
     sync: true,
-    debug: true,
+    // debug: true,
   }),
 });
 
