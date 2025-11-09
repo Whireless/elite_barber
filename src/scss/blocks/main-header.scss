@@ -60,7 +60,7 @@
 .main-header__title {
   // font-size: 35px;
   // line-height: 40px;
-  font-size: 41px;
+  font-size: 42px;
   line-height: 46px;
   color: $white;
   // color: $gold;
@@ -82,8 +82,7 @@
 }
 
 .main-header__description {
-  // width: 285px;
-  width: 333px;
+  width: 340px;
   text-align: justify;
 
   @media (min-width: $tablet) {

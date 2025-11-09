@@ -26,7 +26,7 @@ closeMenu.addEventListener('click', () => {
 
 if (window.matchMedia("(min-width: 375px) and (max-width: 767px)").matches) {
   window.addEventListener('scroll', () => {
-    if (window.scrollY >= 400) {
+    if (window.scrollY >= 360) {
       mainNav.classList.add('main-nav--scroll');
     } else {
       mainNav.classList.remove('main-nav--scroll');

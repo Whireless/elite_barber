@@ -7,17 +7,15 @@
 
 body {
   font-family: 'Raleway', 'Arial', sans-serif;
-  font-size: 16px;
-  line-height: 21px;
-  // font-size: 17px;
-  // line-height: 22px;
+  font-size: 17px;
+  line-height: 22px;
   color: $black;
   min-width: 375px;
   background-color: $white;
 
   @media (min-width: $tablet) {
-    font-size: 17px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 23px;
   }
 
   @media (min-width: $laptop) {
@@ -32,6 +30,9 @@ body {
 }
 
 h2 {
+  font-size: 26px;
+  line-height: 30px;
+
   @media (min-width: $tablet) {
     font-size: 35px;
     line-height: 40px;

@@ -60,7 +60,7 @@
   flex-direction: column;
   row-gap: 25px;
   backdrop-filter: blur(10px);
-  padding: 20px 25px;
+  padding: 20px 15px;
   // border: 1px solid $darkblue;
   border: 1px solid $gold;
 
@@ -89,25 +89,19 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-left: 17px;
+  margin-left: 15px;
 
 
   &::before {
     content: "";
     position: absolute;
-    top: 7px;
-    left: -17px;
-    width: 8px;
-    height: 8px;
-    // background-color: $blue;
+    top: 8px;
+    left: -15px;
+    width: 7px;
+    height: 7px;
     background-color: $gold;
     border-radius: 50%;
   }
-
-  // span {
-  //   text-decoration: underlin;
-  //   border-bottom: 1px solid $gold;
-  // }
 
   @media (min-width: $laptop) {
     margin-left: 25px;
@@ -127,7 +121,7 @@
 }
 
 .services__booking-link {
-  margin: 25px auto 0 auto;
+  margin: 30px auto 0 auto;
   color: $white;
 
   @media (min-width: $tablet) {
