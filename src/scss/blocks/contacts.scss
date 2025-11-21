@@ -34,6 +34,7 @@
     display: flex;
     align-items: center;
     column-gap: 120px;
+    margin-top: 30px;
   }
 
   @media (min-width: $laptop) {
@@ -52,12 +53,12 @@
   margin: 40px 0;
 
   @media (min-width: $tablet) {
-    margin: 40px 0 0 0;
-  }
-
-  @media (min-width: $laptop) {
     margin: 0;
   }
+
+  // @media (min-width: $laptop) {
+  //   // margin: 0;
+  // }
 
   @media (min-width: $desktop) {
     row-gap: 35px;

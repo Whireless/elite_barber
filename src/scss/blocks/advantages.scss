@@ -31,12 +31,12 @@
   display: grid;
   grid-template-columns: 163px 163px;
   justify-content: center;
-  gap: 0px 25px;
+  gap: 0px 20px;
   margin-top: 44px;
 
   @media (min-width: $tablet) {
     grid-template-columns: 210px 210px;
-    gap: 0 30px;
+    gap: 0 40px;
   }
 
   @media (min-width: $laptop) {
@@ -51,6 +51,7 @@
 }
 
 .advantages__item {
+  color: $whitesmoke;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -58,8 +59,9 @@
   justify-content: center;
   width: 137px;
   height: 113px;
-  background-color: $grey;
+  // background-color: $grey;
   padding: 10px;
+  border: 1px solid $gold;
 
   span {
     font-size: 30px;
@@ -82,7 +84,7 @@
   }
 
   @media (min-width: $tablet) {
-    width: 170px;
+    width: 180px;
     height: 93px;
     padding: 20px;
 

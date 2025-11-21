@@ -9,9 +9,11 @@
   padding: 22px 15px;
   z-index: 8;
   transition: 0.4s;
+  border-bottom: 1px solid transparent;
 
   &--scroll {
     background-color: $black;
+    border-bottom: 1px solid $gold;
   }
 
   @media (min-width: $tablet) {

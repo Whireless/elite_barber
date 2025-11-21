@@ -34,7 +34,7 @@ if (window.matchMedia("(min-width: 375px) and (max-width: 767px)").matches) {
   });
 } else if (window.matchMedia("(min-width: 768px)").matches) {
   window.addEventListener('scroll', () => {
-    if (window.scrollY >= 700) {
+    if (window.scrollY >= 500) {
       mainNav.classList.add('main-nav--scroll');
     } else {
       mainNav.classList.remove('main-nav--scroll');

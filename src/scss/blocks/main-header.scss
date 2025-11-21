@@ -11,13 +11,15 @@
   padding: 0px 15px;
 
   @media (min-width: $tablet) {
-    background-image: url("../img/bg/tablet/header.png");
-    padding: 300px 30px 300px 30px;
+    background-image: url("../img/bg/laptop/header.png");
+    // padding: 300px 30px 300px 30px;
+    padding: 0px 30px;
   }
 
   @media (min-width: $laptop) {
-    background-image: url("../img/bg/laptop/header.png");
-    padding: 300px 60px 300px 60px;
+    // background-image: url("../img/bg/laptop/header.png");
+    // padding: 300px 60px 300px 60px;
+    padding: 0 60px;
   }
 
   @media (min-width: $desktop) {
@@ -86,7 +88,7 @@
   text-align: justify;
 
   @media (min-width: $tablet) {
-    width: 373px;
+    width: 406px;
   }
 
   @media (min-width: $laptop) {
