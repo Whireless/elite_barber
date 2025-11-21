@@ -14,8 +14,6 @@ body {
   min-width: 375px;
   // background-color: $whitesmoke;
   background-color: $black;
-  // background-color: #1a1a1a;
-  // background-color: #1b1d25;
 
   @media (min-width: $tablet) {
     font-size: 18px;
@@ -104,7 +102,7 @@ h3 {
 .online-booking {
   text-transform: uppercase;
   // color: $black;
-  color: $white;
+  color: $whitesmoke;
   font-weight: 600;
   text-decoration: none;
   display: block;
