@@ -1,29 +1,28 @@
 .main-header {
-  // color: $blue;
   color: $gold;
   display: flex;
   align-items: center;
   height: 100vh;
-  background-image: url("../img/bg/mobile/header.png");
+  // background-image: url("../img/bg/mobile/header.png");
+  background-image: url("../img/bg/header-bg.png"), linear-gradient(to top, rgba($black, 1));
+  background-blend-mode: overlay;
   background-size: cover;
   background-repeat: no-repeat;
-  // padding: 161px 15px 150px 15px;
+  background-position: center;
   padding: 0px 15px;
 
   @media (min-width: $tablet) {
-    background-image: url("../img/bg/laptop/header.png");
-    // padding: 300px 30px 300px 30px;
+    // background-image: url("../img/bg/laptop/header.png");
     padding: 0px 30px;
   }
 
   @media (min-width: $laptop) {
     // background-image: url("../img/bg/laptop/header.png");
-    // padding: 300px 60px 300px 60px;
     padding: 0 60px;
   }
 
   @media (min-width: $desktop) {
-    padding: 410px 120px 410px 120px;
+    padding: 0 120px;
   }
 }
 
@@ -31,7 +30,6 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  // row-gap: 20px;
   row-gap: 22px;
 
   @media (min-width: $tablet) {
