@@ -86,7 +86,7 @@
 .main-footer__button-up {
   position: fixed;
   right: 15px;
-  bottom: 95px;
+  bottom: 87px;
   display: block;
   background-image: url("../img/icons/arrow.svg");
   background-color: $black;
@@ -108,19 +108,19 @@
   }
 
   @media (min-width: $tablet) {
-    bottom: 80px;
+    bottom: 75px;
     right: 30px;
   }
 
   @media (min-width: $laptop) {
-    bottom: 105px;
+    bottom: 90px;
     right: 60px;
     width: 50px;
     height: 50px;
   }
 
   @media (min-width: $desktop) {
-    bottom: 115px;
+    bottom: 100px;
     right: 120px;
     width: 70px;
     height: 70px;
